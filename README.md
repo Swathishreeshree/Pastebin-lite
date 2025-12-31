@@ -38,14 +38,13 @@ https://pastebin-lite-woad-three.vercel.app
 ### Health Check
 
 GET /api/healthz
-
 Response:
+
 ```json
 { "status": "ok" }
 
 
 Create Paste
-
 POST /api/pastes
 {
   "content": "Hello world",
@@ -70,3 +69,4 @@ All rules are enforced server-side
 🔐 Environment Variables
 KV_REST_API_URL=...
 KV_REST_API_TOKEN=...
+```
