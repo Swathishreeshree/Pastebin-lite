@@ -48,6 +48,11 @@ export default async function PastePage({
       </main>
     );
   }
+  // 4. Increment views
+  await kv.set(`paste:${id}`, {
+    ...paste,
+    views: paste.views + 1,
+  });
 
   // 4. Render paste
   return (
